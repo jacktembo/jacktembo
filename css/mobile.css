@@ -7,6 +7,84 @@
         background: black;
     }
     
+    /* Intro section */
+    .intro {
+        flex-direction: column;
+        height: auto;
+        border: 1px dotted grey;
+    }
+
+    .intro .aside-image {
+        border: 1px dotted grey;
+        width: 100%;
+    }
+
+    .intro .aside-image img {
+        width: 100%;
+        height: 95%;
+    }
+
+    .intro .aside-text {
+        font-size: 120%;
+        width: 100%;
+        height: 190vw;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    /* about section */
+
+    .about-section p {
+        padding: 5vw;
+        width: 100%;
+        text-align: center;
+        border: 1px dotted grey;
+    }
+
+    .about-section {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: unset;
+        border: 1px dotted grey;
+        margin-top: 10vw;
+    }
+
+    .about-section .aside-image {
+        border-top: 5vw;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-right: 0;
+        border-top: 2px dotted grey;
+    }
+
+    .about-section .article-2 {
+        padding: 2vw;
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .about-section .aside-image img {
+        width: 97%;
+    }
+
+    .about-section .aside-image .article {
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-section .aside-text {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section .aside-text h1 {
+        font-size: 180%;
+        color: dodgerblue;
+        text-align: center;
+        text-decoration: underline;
+
+    }
     /* resume section */
     .resume-section {
         border: 1px dotted grey;
@@ -89,7 +167,6 @@
     .skills-section .first, .skills-section .second {
         padding: 2vw;
         border: 1px dotted grey;
-        border-radius: 2%;
     }
 
     .skills-section .front-text > h1 {
