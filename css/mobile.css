@@ -173,9 +173,6 @@
    }
     
 /* skills section */
-    .first, .second {
-        font-weight: bold;
-    }
 
    .first h1, .second h1 {
        color: dodgerblue !important;
@@ -185,6 +182,7 @@
    }
 
     .skills-section .first, .skills-section .second {
+        color: rgb(199, 192, 192);
         border-bottom: 1px dotted white !important;
         padding: 2vw;
         border: 1px dotted grey;
