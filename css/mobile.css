@@ -1,4 +1,4 @@
-@media all and (max-width: 767px) {
+@media all and (max-width: 1024px) {
     * {
         box-sizing: border-box;
     }
@@ -198,7 +198,7 @@
 
     .skills-section .stack {
         flex-direction: column;
-        align-content: start;
+        align-items: center;
         border: 1px dotted grey;
         width: 100vw;
     }
@@ -218,7 +218,7 @@
     .skills-section .backend,
     .skills-section .other-skills {
         border: none;
-        padding-right: 0;
+        padding-right: unset;
     }
 
     .skills-section ul {
@@ -228,7 +228,7 @@
     }
 
     .skills-section li {
-        margin-right: 10%;
+        margin: 10%;
     }
 
     .skills-section h1 {
