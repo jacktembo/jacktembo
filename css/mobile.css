@@ -157,6 +157,11 @@
    }
     
 /* skills section */
+    .first, .second {
+        color: black;
+        background-color: rgb(8, 89, 170);
+        font-weight: bold;
+    }
 
    .first h1, .second h1 {
        font-size: 120%;
@@ -164,6 +169,7 @@
    }
 
     .skills-section .first, .skills-section .second {
+        border-bottom: 1px dotted white !important;
         padding: 2vw;
         border: 1px dotted grey;
     }
@@ -228,7 +234,11 @@
     .skills-section h1 {
         color: dodgerblue
     }
-    
+
+    .skills-section .first h1, .skills-section .second h1 {
+       color: white;
+    }
+
     .backend img,
     .frontend img,
     .other-skills img {
