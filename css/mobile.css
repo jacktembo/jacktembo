@@ -3,6 +3,7 @@
         box-sizing: border-box;
     }
 
+    
     body {
         background: black;
     }
@@ -88,7 +89,6 @@
     /* resume section */
     .resume-section {
         border: 1px dotted grey;
-        border-radius: 1%;
         margin-top: 10vw;
     }
     .resume-section .front-text {
@@ -146,7 +146,6 @@
    .services-section {
         margin-top: 10vw;
         border: 1px dotted grey;
-        border-radius: 1%;
 
    }
    .services-section .boxes {
@@ -164,6 +163,12 @@
    }
     
 /* skills section */
+
+   .first h1, .second h1 {
+       font-size: 120%;
+       text-decoration: underline;
+   }
+
     .skills-section .first, .skills-section .second {
         padding: 2vw;
         border: 1px dotted grey;
