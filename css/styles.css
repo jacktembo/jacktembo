@@ -190,14 +190,13 @@ header a:active {
 .about-section .article-2 {
   font-style: italic;
   margin-left: 1%;
-  color: dodgerblue;
 }
+
 .about-section .aside-image img {
   width: 100%;
 }
 
 .about-section .aside-image .article {
-  color: gold;
   padding-left: 30%;
   text-transform: capitalize;
   font-size: 80%;
@@ -233,9 +232,13 @@ header a:active {
   justify-content: space-evenly;
 }
 
+.about-section .personal-particulars li {
+  margin-bottom: 1rem;
+  border-top: 1px dashed dodgerblue;
+}
+
 .about-section a {
-  color: dodgerblue;
-  text-decoration: none;
+  color: gold;
 }
 
 .about-section a:hover {
