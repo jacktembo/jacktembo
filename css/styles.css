@@ -408,16 +408,15 @@ header a:active {
 }
 
 .skills-section .stack {
-  display: flex;
-  justify-content: center;
   border: 3px solid grey;
   border-radius: 2%;
+  display: flex;
   color: white;
 }
 
 .skills-section .aside-text,
 .skills-section .stack {
-  width: 100%;
+  width: 50%;
 }
 
 .skills-section .aside-text h1 {
@@ -446,7 +445,6 @@ header a:active {
 .skills-section .frontend,
 .skills-section .backend,
 .skills-section .other-skills {
-  width: 25%;
   border-right: 2px solid grey;
   padding-right: 1%;
 }
@@ -487,7 +485,7 @@ header a:active {
 
 .skills-section .aside-and-text {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
 /* contact section */
