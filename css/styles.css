@@ -567,6 +567,9 @@ footer .questions {
   display: flex;
   flex-direction: column;
 }
+footer .services .quick-service {
+  margin-bottom: 1rem;
+}
 
 footer h1 {
   color: white;
@@ -587,11 +590,6 @@ footer a {
 footer .quick-links h1 {
   position: relative;
   right: -3vw;
-}
-
-footer .services h1 {
-  position: relative;
-  right: -4vw;
 }
 
 footer .questions * {
