@@ -573,12 +573,12 @@ footer .services .quick-service {
 
 footer h1 {
   color: white;
-  margin-bottom: 7%;
+  margin-bottom: 4%;
   font-size: 135%;
 }
 
 footer li {
-  margin: 5%;
+  margin-bottom: 5%;
   list-style-type: none;
 }
 
@@ -587,17 +587,12 @@ footer a {
   text-decoration: none;
 }
 
-footer .quick-links h1 {
-  position: relative;
-  right: -3vw;
-}
-
 footer .questions * {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 footer .questions h1 {
-  margin-bottom: 3vw;
+  margin-bottom: 1rem;
 }
 
 footer .social-icons {
