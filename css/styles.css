@@ -244,7 +244,7 @@ header a:active {
 .about-section a:hover {
   text-decoration: underline;
 }
-
+/* resume section */
 .resume-section,
 .services-section {
   border: 3px solid grey;
@@ -283,6 +283,7 @@ header a:active {
   border-radius: 7%;
   background-color: rgb(59, 58, 58);
 }
+
 
 .resume-section .boxes .box ul {
   list-style-type: none;

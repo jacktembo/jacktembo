@@ -1,1 +1,26 @@
-/* code for tablets here */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    /* resume-section */
+    .resume-section {
+        border: 1px dotted grey;
+    }
+
+    .resume-section .front-text {
+        margin-left: 0;
+        width: 100%;
+        border: 1px dotted grey;
+        margin-top: 10vw;
+    }
+
+    .resume-section p {
+        padding: 1rem;
+    }
+    
+    /* footer */
+    footer .social-icons {
+        justify-content: center;
+    }
+}
