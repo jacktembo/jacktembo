@@ -3,12 +3,6 @@
         box-sizing: border-box;
     }
 
-    
-    body {
-        background: black;
-    }
-    
-    /* Intro section */
     .intro {
         flex-direction: column;
         height: auto;

@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient( black, rgb(39, 37, 37));
+  background: black;
   z-index: 999;
   font-family: "Open Sans", sans-serif;
 }
@@ -617,6 +617,7 @@ footer .social-icons img:hover {
 }
 
 .copyright {
+  border: 1px dotted grey;
   margin-top: 6vw;
   color: rgb(167, 164, 164);
   display: flex;
