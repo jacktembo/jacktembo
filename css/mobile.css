@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 550px) {
     * {
         box-sizing: border-box;
     }
@@ -158,7 +158,9 @@
     
 /* skills section */
     .first, .second {
-        color: white;
+        color: black;
+        background-color: rgb(8, 89, 170);
+        font-weight: bold;
     }
 
    .first h1, .second h1 {
@@ -207,8 +209,6 @@
     }
 
     .skills-section .aside-text {
-        height: 100vw;
-        overflow-y: scroll;
         border: 0;
         text-align: center;
         padding: 3%;
