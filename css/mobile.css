@@ -1,0 +1,181 @@
+@media all and (max-width: 550px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    
+/* skills section */
+    .skills-section .front-text > h1 {
+        text-decoration: underline;
+        font-size: 180%;
+    }
+
+    .skills-section .front-text p {
+        padding: 1vw;
+        border: 1px dotted grey;
+        text-align: center;
+        width: 95%;
+        right: 0;
+        margin: 2%;
+        
+    }
+    .skills-section .front-text {
+        width: 100%;
+    }
+
+    .skills-section .aside-and-text {
+        flex-direction: column-reverse;
+    }
+
+    .skills-section .stack {
+        flex-direction: column;
+        align-content: start;
+        border: 0;
+        width: 100vw;
+    }
+
+    .skills-section .aside-text,
+    .skills-section .stack {
+        width: 100%;
+    }
+
+    .skills-section .aside-text {
+        border: 0;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .skills-section .frontend,
+    .skills-section .backend,
+    .skills-section .other-skills {
+        border: none;
+        padding-right: 0;
+    }
+
+    .skills-section ul {
+        display: grid;
+        grid-template: repeat(2, 27vw) / repeat(3, 27vw);
+        justify-content: start;
+    }
+
+    .skills-section li {
+        margin-right: 10%;
+    }
+
+    .skills-section h1 {
+        color: dodgerblue
+    }
+    
+    .backend img,
+    .frontend img,
+    .other-skills img {
+        border: 1px dashed grey;
+        width: 100%;
+        height: 100%;
+        padding: 1vw;
+    }
+
+/* contact section */
+    .contact-section {
+        border: 0;
+    }
+
+    .contact-section .front-text h1 {
+        color: dodgerblue;
+        text-decoration: underline;
+        font-size: 150%;
+    }
+
+    .contact-section .front-text .paragraph {
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 3%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-section .contact-info .box {
+        border-bottom: 1px dashed grey;
+        border-top: 1px dashed grey;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contact-info .box img {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .contact-info .box * {
+        margin: 3%;
+    }
+
+    
+/* footer sction */
+    footer {
+        margin-top: 20%;
+    }
+
+    footer .quick-overview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-overview .about article {
+        text-align: center;
+    }
+    
+    footer .about,
+    footer .quick-links,
+    footer .services,
+    footer .questions {
+        width: 100vw;
+        margin-bottom: 5vw;
+    }
+
+    footer .quick-links h1, footer .services h1, footer .services h1 {
+        right: 0;
+    }
+    footer h1 {
+        color: dodgerblue;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .quick-links ul li{
+        position: relative;
+        right: 7vw;
+        margin-top: 1rem;
+    }
+
+    
+    footer .services ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .services ul li {
+        list-style-type: circle;
+    }
+
+    footer .questions {
+        text-align: center;
+    }
+
+    footer .social-icons {
+        justify-content: space-evenly;
+    }
+
+    footer .social-icons img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .copyright {justify-content: space-around;}
+}
