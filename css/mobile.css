@@ -1,12 +1,45 @@
 @media all and (max-width: 550px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: black;
+    }
     .intro {
         flex-direction: column;
     }
     
+   /* services section */
+
+   .services-section .front-text {
+       padding: 2vw;
+       margin-left: 0;
+       width: 100%;
+       border: 1px dotted grey;
+   }
+   .services-section {
+        margin-top: 10vw;
+        border: none;
+
+   }
+   .services-section .boxes {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+   }
+
+   .services-section .box {
+       width: 95%;
+       margin-right: 0;
+       margin-bottom: 5vw;
+       height: fit-content;
+   }
     
 /* skills section */
     .skills-section .first, .skills-section .second {
-        padding: 1vw;
+        padding: 2vw;
         border: 1px dotted grey;
     }
 

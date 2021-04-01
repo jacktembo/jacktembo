@@ -247,8 +247,7 @@ header a:active {
   color: rgb(204, 196, 196);
 }
 
-.resume-section .front-text,
-.services-section .front-text {
+.resume-section .front-text {
   margin-left: 20%;
   margin-bottom: 5%;
   width: 65%;
@@ -321,6 +320,14 @@ header a:active {
   content: "....";
   color: rgb(226, 108, 10);
 }
+/* .services section */
+
+.services-section .front-text {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  width: 65%;
+  text-align: center;
+}
 
 .services-section {
   color: rgb(184, 177, 177);
@@ -364,6 +371,7 @@ header a:active {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .services-section .box ul li {
