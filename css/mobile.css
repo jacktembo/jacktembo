@@ -5,6 +5,11 @@
     
     
 /* skills section */
+    .skills-section .first, .skills-section .second {
+        padding: 1vw;
+        border: 1px dotted grey;
+    }
+
     .skills-section .front-text > h1 {
         text-decoration: underline;
         font-size: 180%;
@@ -133,6 +138,7 @@
     footer .quick-links,
     footer .services,
     footer .questions {
+        align-items: center;
         width: 100vw;
         margin-bottom: 5vw;
     }
