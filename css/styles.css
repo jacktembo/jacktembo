@@ -320,12 +320,18 @@ header a:active {
   content: "....";
   color: rgb(226, 108, 10);
 }
-/* .services section */
 
+/* .services section */
 .services-section .front-text {
   margin-left: 20%;
   margin-bottom: 5%;
   width: 65%;
+  text-align: center;
+}
+
+* .front-text::after {
+  content: ".....";
+  display: block;
   text-align: center;
 }
 

@@ -6,11 +6,58 @@
     body {
         background: black;
     }
-    .intro {
-        flex-direction: column;
-    }
     
+    /* resume section */
+    .resume-section {
+        border: 1px dotted grey;
+        border-radius: 1%;
+        margin-top: 10vw;
+    }
+    .resume-section .front-text {
+        padding: 3vw;
+        margin-left: 0;
+        width: 100%;
+        border: 1px dotted grey;
+    }
+
+    .resume-section .front-text h1 {
+        font-size: 180%;
+        color: dodgerblue;
+        text-decoration: underline;
+    }
+
+    .resume-section .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-section .box {
+        background-color: rgb(22, 22, 22);
+        width: 93%;
+        height: fit-content;
+        margin-bottom: 5vw;
+    }
+
+    .resume-section .boxes ul .year {
+        font-size: 150%;
+        color: dodgerblue;
+    }
+
+    .resume-section .boxes ul .program {
+        font-size: 150%;
+    }
+
+    .resume-section .boxes ul .place {
+        color: dodgerblue;
+        font-size: 110%;
+    }
    /* services section */
+   .services-section .front-text h1 {
+       color: dodgerblue;
+       font-size: 180%;
+       text-decoration: underline;
+   }
 
    .services-section .front-text {
        padding: 2vw;
@@ -20,7 +67,8 @@
    }
    .services-section {
         margin-top: 10vw;
-        border: none;
+        border: 1px dotted grey;
+        border-radius: 1%;
 
    }
    .services-section .boxes {
@@ -41,6 +89,7 @@
     .skills-section .first, .skills-section .second {
         padding: 2vw;
         border: 1px dotted grey;
+        border-radius: 2%;
     }
 
     .skills-section .front-text > h1 {
@@ -68,7 +117,7 @@
     .skills-section .stack {
         flex-direction: column;
         align-content: start;
-        border: 0;
+        border: 1px dotted grey;
         width: 100vw;
     }
 
@@ -152,9 +201,12 @@
     }
 
     
-/* footer sction */
+/* footer section */
     footer {
+        border: 1px dotted grey;
         margin-top: 20%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     footer .quick-overview {
@@ -164,6 +216,7 @@
     }
 
     .quick-overview .about article {
+        padding: 3vw;
         text-align: center;
     }
     
