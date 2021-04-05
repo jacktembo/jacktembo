@@ -211,6 +211,7 @@ header a:active {
 }
 
 .about-section .aside-text h1 {
+  text-align: center;
   color: white;
   font-size: 300%;
 }
