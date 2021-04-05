@@ -360,7 +360,7 @@ header a:active {
 
 .services-section .boxes {
   display: grid;
-  grid-template-rows: repeat(3, 30vw);
+  grid-template-rows: repeat(4, 30vw);
   grid-template-columns: repeat(3, 30vw);
   width: 97vw;
   justify-content: center;
