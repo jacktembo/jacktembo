@@ -48,7 +48,7 @@ header .phone-number:hover {
 
 
 *::selection {
-  color: black;
+  color: rgb(20, 20, 20);
   background-color: dodgerblue;
 }
 
