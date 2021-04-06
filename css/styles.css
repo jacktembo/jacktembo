@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
 header {
   z-index: 99999999;
   text-transform: capitalize;
@@ -14,6 +15,7 @@ header {
   height: 10%;
   top: 0;
   display: flex;
+  display: none;
   background-color: rgb(10, 91, 173);
   border: 2px solid rgb(114, 114, 110);
 }
