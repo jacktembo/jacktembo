@@ -4,9 +4,23 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.active {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav .nav-item:hover {
+  background-color: gold;
+}
 
 .desktop-navbar {
-  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(15, 106, 197);
   position: fixed;
   z-index: 99999999;
 }

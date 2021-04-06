@@ -1,6 +1,6 @@
 @media all and (max-width: 1024px) {
     * {
-        box-sizing: border-box;
+        box-sizing: border-box !important;
     }
 
     header {
@@ -12,8 +12,11 @@
     }
 
     .mobile-navbar {
+        background-color: rgb(15, 106, 197);
         display: flex;
         flex-wrap: nowrap;
+        position: fixed;
+        z-index: 9999;
     }
 
     .intro {
