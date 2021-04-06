@@ -247,6 +247,10 @@ header a:active {
   font-size: 250%;
 }
 
+.resume-section {
+  margin-top: 10vw;
+}
+
 .resume-section .boxes {
   display: grid;
   grid-template-rows: repeat(2, 30vw);
@@ -258,13 +262,13 @@ header a:active {
 }
 
 .resume-section .box {
-  height: 78%;
-  margin: 1%;
+  border-radius: 2%;
+  height: auto;
+  margin: 5%;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
-  border-radius: 7%;
-  background-color: rgb(59, 58, 58);
+  background-color: rgb(22, 22, 22);
 }
 
 
