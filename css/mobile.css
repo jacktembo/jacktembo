@@ -7,6 +7,15 @@
         display: none;
     }
 
+    .desktop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     .intro {
         flex-direction: column;
         height: auto;

@@ -5,6 +5,15 @@ body {
 }
 
 
+.desktop-navbar {
+  background-color: black;
+  position: fixed;
+  z-index: 99999999;
+}
+
+.mobile-navbar {
+  display: none;
+}
 
 *::selection {
   color: rgb(20, 20, 20);
