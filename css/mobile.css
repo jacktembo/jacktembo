@@ -174,12 +174,12 @@
     
 /* skills section */
     .first, .second {
-        color: black;
-        background-color: rgb(8, 89, 170);
         font-weight: bold;
     }
 
    .first h1, .second h1 {
+       color: dodgerblue !important;
+       font-weight: bold;
        font-size: 120%;
        text-decoration: underline;
    }
