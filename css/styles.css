@@ -20,7 +20,7 @@ body {
 .desktop-navbar {
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgb(15, 106, 197);
+  background-color: black;
   position: fixed;
   z-index: 99999999;
 }
@@ -539,4 +539,4 @@ footer .social-icons img:hover {
 .copyright .designer {
   font-size: 75%;
   color: white;
-}
+}          - Albert Einstein </div>

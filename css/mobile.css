@@ -9,7 +9,7 @@
 
     .mobile-navbar {
         width: 100%;
-        background-color: rgb(15, 106, 197);
+        background-color: black;
         display: flex;
         flex-wrap: nowrap;
         position: fixed;
