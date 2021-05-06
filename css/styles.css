@@ -83,9 +83,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  width: 50%;
+  width: 55%;
   height: auto;
-  border-right: 3px solid grey;
+  border: 1px dotted grey;
 }
 
 .about-section .article-2 {
@@ -94,7 +94,8 @@ body {
 }
 
 .about-section .aside-image img {
-  width: 100%;
+  width: 50%;
+  height: 80%;
 }
 
 .about-section .aside-image .article {
@@ -105,7 +106,7 @@ body {
 }
 
 .about-section .aside-text {
-  width: 50%;
+  width: 40%;
   height: 100%;
   padding: 1%;
   margin: 1%;
@@ -145,6 +146,10 @@ body {
 
 .about-section a:hover {
   text-decoration: underline;
+}
+
+.my-images {
+  display: flex;
 }
 /* resume section */
 .resume-section,
