@@ -86,6 +86,28 @@
 </style>
 
 <body>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="page_inbox" page_id="186725415245958">
+  </div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -163,7 +185,7 @@
         <article class="why-trust-me">
           <h1>Why Should You Trust Me?</h1>
           <p>
-            Actually don't. I said Don't. Kkkkk... Just kidding. The ultimte reason why you should
+            Actually don't. I said Don't. Kkkkk... Just kidding. The ultimate as to reason why you should
             trust me is simply because I am able to turn your concepts into
             completing. It's not as easy as you may think to find a dedicated
             web developer who can program a website or web application within
@@ -312,7 +334,7 @@
         <div class="box">
           <ul>
             <li>
-              <img src="images/seo.svg" alt="Search engine optimization">
+              <img src="images/software-development.svg" alt="Search engine optimization">
             </li>
             <li>Search Engine Optimization</li>
             <li>______</li>
