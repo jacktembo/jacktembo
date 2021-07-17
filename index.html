@@ -828,7 +828,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        Copyright &copy; 2021 | <strong><span>Jack Tembo&REG;</span></strong>. All Rights Reserved
+        Copyright &copy; <span class="year"></span> | <strong><span>Jack Tembo&REG;</span></strong>. All Rights Reserved
       </div>
 
     </div>
@@ -838,6 +838,13 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
+
+  <!-- utitily scripts -->
+  <script>
+    let currentYear = new Date().getFullYear()
+    let yearElement = document.querySelector("span.year")
+    yearElement.textContent = currentYear
+  </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

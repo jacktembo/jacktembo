@@ -646,7 +646,7 @@
     </div>
 
     <div class="copyright">
-      <div>copyright &copy; 2021. All rights reserved.</div>
+      <div>copyright &copy; <span class="full-year"></span>. All rights reserved.</div>
       <div class="designer">Designed by Jack Tembo<sup>&TRADE;</sup></div>
       <div class="designer">Using HTML5, CSS3, Javascript & Bootstrap</div>
     </div>
@@ -655,6 +655,13 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
+
+   <script>
+        let currentYear = new Date().getFullYear()
+        let yearElement = document.querySelector("span.full-year")
+        yearElement.textContent = currentYear
+  
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
     integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
     crossorigin="anonymous"></script>
