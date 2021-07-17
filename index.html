@@ -35,6 +35,11 @@
 
 </head>
 <style>
+  .the-time {
+    position: relative;
+    left: 1rem;
+  }
+
   #header {
     background: rgb(34, 58, 80);
 
@@ -82,6 +87,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto active" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="v2.html">Global</a></li>
+          <li><a class="nav-link scrollto" href="downloads/index.html
+            ">Downloads</a></li>
           <li><a class="nav-link scrollto" href="v2.html#services-section">Services</a></li>
           <li><a class="nav-link scrollto" href="v2.html#contact-section">Contact</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
@@ -828,9 +835,11 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        Copyright &copy; <span class="year"></span> | <strong><span>Jack Tembo&REG;</span></strong>. All Rights Reserved
+        Copyright &copy; <span class="year"></span> | <strong><span>Jack Tembo&REG;</span></strong>. All Rights Reserved |
       </div>
+      <div class="the-time">
 
+      </div>
     </div>
   </footer><!-- End Footer -->
 
@@ -844,6 +853,19 @@
     let currentYear = new Date().getFullYear()
     let yearElement = document.querySelector("span.year")
     yearElement.textContent = currentYear
+
+    function timeCounter() {
+      let currentTime = new Date()
+      let hour = currentTime.getHours()
+      let minute = currentTime.getMinutes()
+      let second = currentTime.getSeconds()
+      let fullTime = `The time is ${hour}:${minute}:${second}`
+      let timeElement = document.querySelector(".the-time")
+      timeElement.textContent = fullTime
+    }
+
+    timeCounter()
+    setInterval(timeCounter, 1000)
   </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

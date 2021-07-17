@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloads | Jack Tembo</title>
+  </head>
+  <style>
+      body {
+          background-color: rgb(212, 223, 226);
+      }
+
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid green;
+    }
+
+    a {
+        font-size: 110%;
+        color: rgb(5, 35, 54);
+        font-weight: bold;
+    }
+
+
+    @media  screen and (min-width: 768px) {
+        .downloads {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 60vw;
+        }
+
+        footer {
+            left: 40vw !important;
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 1rem;
+        left: 20vw;
+    }
+
+    li {
+        list-style: circle;
+    }
+  </style>
+  <body>
+      <div><a href="../index.html">Home</a></div>
+    <article class="downloads">
+      <h1>Download important documents here for Jack Tembo</h1>
+      <p>
+          The documes below are:
+          <div>
+              <ul>
+                  <li>Grade Twelve Statement of Results</li>
+                  <li>Official International Passport</li>
+                  <li>ZRA Tax Payer Identification Number</li>
+                  <li>Resume (Curriculum Vitae)</li>
+              </ul>
+          </div>
+      </p>
+      <table>
+        <tr>
+          <th>Document</th>
+          <th>Type</th>
+          <th>Last Updated</th>
+          <th>Download Size</th>
+          <th>Download</th>
+        </tr>
+        <tr>
+          <td>Grade 12 results</td>
+          <td>PDF</td>
+          <td class="last-updated"></td>
+          <td>361.1 kib</td>
+          <td><a href="documents/ECZ G12.pdf" download="">Download</a></td>
+        </tr>
+        <tr>
+          <td>Passport</td>
+          <td>PDF</td>
+          <td class="last-updated"></td>
+          <td>46.6 kib</td>
+          <td><a href="documents/passport.pdf" download="">Download</a></td>
+        </tr>
+        <tr>
+          <td>ZRA TPIN</td>
+          <td>JPEG</td>
+          <td class="last-updated"></td>
+          <td>482 kib</td>
+          <td><a href="documents/jacksontpin.JPG" download="">Download</a></td>
+        </tr>
+        <tr>
+          <td>Resume</td>
+          <td>PDF</td>
+          <td class="last-updated"></td>
+          <td>36.8 kib</td>
+          <td><a href="documents/resume.pdf" download="">Download</a></td>
+        </tr>
+      </table>
+    </article>
+   <footer>
+       <article class="copyright">
+           copyright &copy; <span id="current-year"></span>| Jack Tembo.
+       </article>
+   </footer>
+   <script>
+       let currentYear = new Date().getFullYear()
+       let yearElement = document.querySelector("#current-year")
+       yearElement.textContent = currentYear
+
+       let lastUpdated = new Date().toDateString()
+       let lastUpdatedElements = document.getElementsByClassName("last-updated")
+       Array.prototype.forEach.call(lastUpdatedElements, (elem) => elem.textContent = lastUpdated)
+   </script>
+  </body>
+</html>
