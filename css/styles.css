@@ -1,0 +1,547 @@
+body {
+  background: black;
+  z-index: 999;
+  font-family: "Open Sans", sans-serif;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav .nav-item:hover {
+  background-color: gold;
+}
+
+.desktop-navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  position: fixed;
+  z-index: 99999999;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+*::selection {
+  color: rgb(20, 20, 20);
+  background-color: dodgerblue;
+}
+
+.intro {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid grey;
+  border-top: 10px solid grey;
+  height: 50vw;
+}
+
+.intro .aside-image {
+  border: 3px solid grey;
+  width: 50%;
+}
+
+.intro .aside-image img {
+  padding-top: 1%;
+  width: 98%;
+  height: 99%;
+}
+
+.intro .aside-text {
+  width: 50%;
+  font-size: 150%;
+  padding-left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.first-word-on-first {
+  color: gold;
+}
+
+.aside-text .key-word {
+  color: gold;
+}
+
+/* about section */
+.about-section {
+  color: rgb(206, 199, 199);
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid grey;
+}
+
+.about-section .aside-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 55%;
+  height: auto;
+  border: 1px dotted grey;
+}
+
+.about-section .article-2 {
+  font-style: italic;
+  margin-left: 1%;
+}
+
+.about-section .aside-image img {
+  width: 50%;
+  height: 80%;
+}
+
+.about-section .aside-image .article {
+  padding-left: 30%;
+  text-transform: capitalize;
+  font-size: 80%;
+  font-style: italic;
+}
+
+.about-section .aside-text {
+  width: 40%;
+  height: 100%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.about-section .aside-text h1 {
+  text-align: center;
+  color: white;
+  font-size: 300%;
+}
+.about-section .personal-particulars {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.about-section .personal-particulars .keys {
+  color: white;
+}
+
+.about-section .personal-particulars .keys,
+.about-section .personal-particulars .values {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-section .personal-particulars li {
+  margin-bottom: 1rem;
+  border-top: 1px dashed dodgerblue;
+}
+
+.about-section a {
+  color: gold;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}
+
+.my-images {
+  display: flex;
+}
+/* resume section */
+.resume-section,
+.services-section {
+  border: 3px solid grey;
+  color: rgb(204, 196, 196);
+}
+
+.resume-section .front-text {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  width: 65%;
+  text-align: center;
+}
+
+.resume-section .front-text h1,
+.services-section .front-text h1 {
+  color: white;
+  font-size: 250%;
+}
+
+.resume-section {
+  margin-top: 10vw;
+}
+
+.resume-section .boxes {
+  display: grid;
+  grid-template-rows: repeat(2, 30vw);
+  grid-template-columns: repeat(2, 40vw);
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.resume-section .box {
+  border-radius: 2%;
+  height: auto;
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background-color: rgb(22, 22, 22);
+}
+
+
+.resume-section .boxes .box ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-section .box:hover {
+  background-color: rgb(13, 55, 102);
+}
+.resume-section .boxes .box li {
+  margin: 2%;
+}
+
+.resume-section .boxes ul .year {
+  color: orange;
+  font-size: 170%;
+  font-weight: bold;
+}
+
+.resume-section .boxes ul .program {
+  font-weight: bold;
+  font-size: 175%;
+}
+
+.resume-section .boxes ul .place {
+  text-transform: uppercase;
+  color: rgb(219, 147, 12);
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.resume-section .boxes ul .description {
+  color: rgb(184, 177, 177);
+}
+
+.resume-section .boxes ul .description::after {
+  display: block;
+  content: "....";
+  color: rgb(226, 108, 10);
+}
+
+/* .services section */
+.services-section .front-text {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  width: 65%;
+  text-align: center;
+}
+
+* .front-text::after {
+  content: ".....";
+  display: block;
+  text-align: center;
+}
+
+.services-section {
+  color: rgb(184, 177, 177);
+}
+
+.services-section h1 {
+  color: white;
+}
+
+.services-section img {
+  transition: transform 2s;
+  width: 30%;
+  height: 30%;
+}
+
+.services-section img:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.services-section .boxes {
+  display: grid;
+  grid-template-rows: repeat(4, 30vw);
+  grid-template-columns: repeat(3, 30vw);
+  width: 97vw;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.services-section .box {
+  margin-right: 5%;
+  transition: transform 1s;
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 1%;
+  height: 17vw;
+  background-color: rgb(22, 22, 22);
+}
+
+.services-section .box ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-section .box ul li {
+  text-transform: uppercase;
+  color: orange;
+  margin: 3%;
+}
+
+.services-section .box:hover {
+  background-color: rgb(13, 55, 102);
+  transform: scale(1.1);
+  z-index: 99999;
+  border: 1px solid grey;
+}
+
+/* Skills section */
+.skills-section {
+  margin-top: 5vw;
+  width: 99.5%;
+  color: white;
+}
+
+.skills-section > h1 {
+  font-size: 200%;
+  text-align: center;
+}
+
+.skills-section .stack {
+  border: 1px solid grey;
+  display: flex;
+  color: white;
+}
+
+.skills-section .aside-text,
+.skills-section .stack {
+  width: 50%;
+}
+
+.skills-section .aside-text h1 {
+  font-size: 150%;
+  text-align: center;
+  color: dodgerblue;
+  text-transform: capitalize;
+}
+.skills-section .aside-text {
+  border: 1px solid grey;
+  padding: 1%;
+  color: rgb(209, 201, 201);
+}
+
+.skills-section .aside-text *:not(h1):after {
+  content: "....";
+  display: block;
+  color: gold;
+}
+
+.skills-section .stack h1 {
+  font-size: 140%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.skills-section .frontend,
+.skills-section .backend {
+  border-right: 1px solid grey;
+  padding-right: 1%;
+}
+
+.skills-section p {
+  position: relative;
+  right: -16%;
+  width: 65vw;
+  margin: 4%;
+}
+
+.skills-section .heading {
+  text-align: center;
+  position: relative;
+  font-size: 300%;
+}
+.backend img,
+.frontend img,
+.other-skills img {
+  transition: transform 1s;
+  width: 5vw;
+  height: 5vw;
+}
+
+.skills-section .stack .frontend li,
+.skills-section .stack .backend li,
+.skills-section .stack .other-skills li {
+  list-style-type: none;
+  color: gold;
+  margin-bottom: 3rem;
+  border: 1px solid rgb(26, 25, 25);
+}
+
+.skills-section .stack img:hover {
+  transform: scale(1.2);
+}
+
+.skills-section .aside-and-text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* contact section */
+.contact-section {
+  margin-top: 5vw;
+  border: 2px solid gray;
+  border-radius: 2%;
+  color: white;
+}
+
+.contact-section .front-text h1 {
+  font-size: 300%;
+  text-align: center;
+}
+
+.contact-section .front-text .paragraph {
+  position: relative;
+  right: -25%;
+  width: 50%;
+}
+
+.contact-section .contact-info {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .contact-info .box {
+  display: flex;
+  flex-direction: column;
+  width: 17vw;
+}
+
+.contact-info .box img {
+  transition: transform 1s;
+  background-color: rgb(11, 79, 156);
+  border-radius: 100%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.contact-info .box img:hover {
+  transform: scale(1.2);
+}
+
+.contact-info .box * {
+  margin: 4%;
+}
+
+.contact-info .box article {
+  font-weight: bold;
+}
+
+.contact-info .box a {
+  text-decoration: none;
+  color: gold;
+  position: relative;
+  left: -5%;
+}
+
+.contact-info .box address {
+  position: relative;
+  left: -6%;
+}
+
+/* footer section */
+footer {
+  background-size: 10%;
+  margin: 7% 2%;
+  color: rgb(182, 174, 174);
+}
+
+footer .quick-overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .about,
+footer .quick-links,
+footer .services,
+footer .questions {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+footer .services .quick-service {
+  margin-bottom: 1rem;
+}
+
+footer h1 {
+  color: white;
+  margin-bottom: 4%;
+  font-size: 135%;
+}
+
+footer li {
+  margin-bottom: 5%;
+  list-style-type: none;
+}
+
+footer a {
+  color: rgb(168, 162, 162);
+  text-decoration: none;
+}
+
+footer .questions * {
+  margin-bottom: 3%;
+}
+
+footer .questions h1 {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .social-icons img {
+  transition: transform 2s;
+  margin-right: 1vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+footer .social-icons img:hover {
+  transform: rotate(360deg);
+}
+
+
+.social-icon:nth-child(even) img {
+  border-radius: 100%;
+}
+
+.copyright {
+  border: 1px dotted grey;
+  margin-top: 6vw;
+  color: rgb(167, 164, 164);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright .designer {
+  font-size: 75%;
+  color: white;
+}          - Albert Einstein </div>

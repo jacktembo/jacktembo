@@ -1,0 +1,79 @@
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    /* resume-section */
+    .resume-section {
+        border: 1px dotted grey;
+    }
+
+    .resume-section .front-text {
+        margin-left: 0;
+        width: 100%;
+        border: 1px dotted grey;
+        margin-top: 10vw;
+    }
+
+    .resume-section p {
+        padding: 1rem;
+    }
+    
+    .resume-section .boxes {
+        grid-template-rows: repeat(4, 55vw);
+        grid-template-columns: repeat(1, 90vw);
+    }
+
+    .resume-section .box {
+        background-color: rgb(22, 22, 22);
+        border-radius: unset;
+    }
+
+    /* contact section */
+    
+
+    /* footer */
+    footer .quick-overview {
+        margin-bottom: 15vw;
+        display: grid;
+        grid-template-rows: repeat(2, 30vw);
+        grid-template-columns: repeat(2, 50vw);
+    }
+
+    footer .about,
+    footer .quick-links,
+    footer .services,
+    footer .questions {
+        width: 100%;
+        margin-bottom: unset;
+    }
+
+    footer .quick-links h1 {
+        right: unset;
+    }
+
+    footer h1 {
+        margin-bottom: 0;
+    }
+
+    .quick-links ul li {
+        right: unset;
+        margin-top: unset;
+    }
+
+    footer .questions {
+        padding: 1rem;
+    }
+
+    footer .quick-links {
+        margin-top: 2rem;
+    }
+
+    footer .services {
+        margin-top: 6rem;
+    }
+
+    footer .about {
+        margin-bottom: 1rem;
+    }
+}
