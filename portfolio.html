@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Jack Tembo - Devmind Group Projects | USDT Vault & 600+ Solutions</title>
+  <meta name="description" content="Explore 600+ successful projects by Devmind Group including USDT Vault (Multi-Chain DeFi), E-Commerce, Mobile Banking, Healthcare, Enterprise CRM, and more. Production-grade Web3 and enterprise solutions.">
+  <meta name="keywords" content="Portfolio, Software Projects, Web3 Projects, DeFi Platform, USDT Vault, Blockchain Projects, Mobile Apps, Enterprise Solutions, Jack Tembo, Devmind Group">
+  <meta name="author" content="Jack Tembo">
+  <link rel="shortcut icon" type="image/svg" href="images/logo.svg" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jacktembo.com/portfolio.html">
+  <meta property="og:title" content="Portfolio | Devmind Group - USDT Vault & 600+ Successful Projects">
+  <meta property="og:description" content="Featured: USDT Vault Multi-Chain DeFi Platform. Plus 600+ successful projects in Fintech, Healthcare, E-Commerce, and Enterprise Solutions.">
+  <meta property="og:image" content="https://jacktembo.com/assets/img/hero-img.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jacktembo.com/portfolio.html">
+  <meta property="twitter:title" content="Portfolio | Devmind Group - USDT Vault & 600+ Projects">
+  <meta property="twitter:description" content="Featured: USDT Vault Multi-Chain DeFi Platform. Plus 600+ successful software solutions.">
+  <meta property="twitter:image" content="https://jacktembo.com/assets/img/hero-img.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+  </style>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#667eea',
+            secondary: '#764ba2',
+            dark: '#1a202c',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold gradient-text">Jack Tembo</div>
+        
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+          <a href="services.html" class="text-gray-700 hover:text-primary transition">Services</a>
+          <a href="portfolio.html" class="text-primary font-semibold transition">Portfolio</a>
+          <a href="testimonials.html" class="text-gray-700 hover:text-primary transition">Testimonials</a>
+          <a href="contact.html" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contact</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
+        <a href="about.html" class="block py-2 text-gray-700 hover:text-primary transition">About</a>
+        <a href="services.html" class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
+        <a href="portfolio.html" class="block py-2 text-primary font-semibold">Portfolio</a>
+        <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-primary transition">Testimonials</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-20 gradient-bg">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold text-white mb-4" data-aos="fade-up">Our Portfolio</h1>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        600+ Custom Software Solutions Delivered Worldwide
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+    <div class="container mx-auto px-6">
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12" data-aos="fade-up">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="bg-yellow-400 text-dark px-4 py-1 rounded-full text-sm font-semibold">🔥 Latest Project</span>
+          <span class="bg-white/20 text-white px-4 py-1 rounded-full text-sm font-semibold">Production-Ready</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">USDT Vault - Multi-Chain DeFi Platform</h2>
+        <p class="text-xl text-white/90 mb-8 leading-relaxed">
+          A production-grade Web3 application for managing time-locked USDT savings across Ethereum, Polygon, and BNB Smart Chain. 
+          Features verified smart contracts, emergency access controls, multi-wallet support, and comprehensive analytics dashboard.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <h3 class="text-white font-semibold mb-3 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Security Features
+            </h3>
+            <ul class="text-white/80 space-y-2 text-sm">
+              <li>✓ Verified Smart Contracts</li>
+              <li>✓ OpenZeppelin Security Libraries</li>
+              <li>✓ Time-Lock Protection</li>
+              <li>✓ Emergency Withdrawal Caps</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <h3 class="text-white font-semibold mb-3 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              Key Features
+            </h3>
+            <ul class="text-white/80 space-y-2 text-sm">
+              <li>✓ Multi-Chain Support (4 Networks)</li>
+              <li>✓ MetaMask & WalletConnect</li>
+              <li>✓ Real-Time Analytics Dashboard</li>
+              <li>✓ Instant Deployment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Solidity</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">React</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Ethers.js</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">OpenZeppelin</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Web3</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Ethereum</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Polygon</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">BNB Chain</span>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="https://vault.devmindgroup.com" target="_blank" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition transform hover:scale-105 inline-flex items-center gap-2">
+            <span>View Live Project</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+          <a href="https://vault.devmindgroup.com/docs" target="_blank" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition inline-flex items-center gap-2">
+            <span>Documentation</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4">More <span class="gradient-text">Projects</span></h2>
+        <p class="text-xl text-gray-600">Selected from 600+ successful deliveries worldwide</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Featured Project 1: Zambia SMS Gateway -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border-2 border-primary/20" data-aos="fade-up" data-aos-delay="50">
+          <div class="h-48 bg-gradient-to-r from-green-600 to-emerald-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <h3 class="text-xl font-bold">Zambia SMS Gateway</h3>
+              <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-semibold">LIVE</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Production-ready REST API platform for sending SMS messages to Zambian mobile numbers. Supports all major operators (Airtel, MTN, Zamtel) with custom Alpha Numeric Sender IDs for OTP, promotional, and transactional messages.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Django</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">REST API</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">SMS</span>
+            </div>
+            <div class="border-t pt-4 mb-4">
+              <div class="text-sm text-gray-600 mb-2">Features</div>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>✓ Bulk & Single SMS</li>
+                <li>✓ Custom Sender IDs</li>
+                <li>✓ Multi-Network Support</li>
+                <li>✓ Balance & Delivery Tracking</li>
+              </ul>
+            </div>
+            <div class="flex gap-2">
+              <a href="https://bulksms.devmindgroup.com" target="_blank" class="flex-1 text-center bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-secondary transition">
+                Live Platform
+              </a>
+              <a href="https://bulksms.devmindgroup.com/api/v1/docs" target="_blank" class="flex-1 text-center border-2 border-primary text-primary px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition">
+                API Docs
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project 2: Payment Gateway System -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border-2 border-primary/20" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <h3 class="text-xl font-bold">Payment Gateway System</h3>
+              <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded text-xs font-semibold">ENTERPRISE</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Comprehensive payment processing platform enabling merchants to accept card payments and mobile money worldwide. Seamless integration with multiple payment providers, real-time transaction processing, and fraud detection.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Django</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Stripe</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Fintech</span>
+            </div>
+            <div class="border-t pt-4 mb-4">
+              <div class="text-sm text-gray-600 mb-2">Features</div>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>✓ Card & Mobile Money</li>
+                <li>✓ Multi-Currency Support</li>
+                <li>✓ Fraud Detection</li>
+                <li>✓ Real-Time Processing</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-center bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                Global Payment Solutions
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 1: E-Commerce Platform -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+            <p class="text-gray-600 mb-4">
+              Scalable online marketplace serving 10,000+ daily users with integrated payment processing and inventory management.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">React</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Node.js</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">MongoDB</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">+150% Revenue Increase</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Enterprise CRM -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Enterprise CRM System</h3>
+            <p class="text-gray-600 mb-4">
+              Custom customer relationship management for logistics company managing 5,000+ clients with automated workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Django</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Vue.js</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">60% Efficiency Gain</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Mobile Banking App -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mobile Banking App</h3>
+            <p class="text-gray-600 mb-4">
+              Secure fintech mobile application with biometric authentication, real-time transactions, and fraud detection.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">React Native</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Firebase</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Stripe</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">50K+ Downloads</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Healthcare Platform -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 bg-gradient-to-r from-pink-500 to-rose-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Healthcare Management System</h3>
+            <p class="text-gray-600 mb-4">
+              Complete hospital management platform with patient records, appointment scheduling, and telemedicine features.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Flask</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">MySQL</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">10K+ Patients Served</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Analytics Dashboard -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-48 bg-gradient-to-r from-indigo-500 to-blue-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Business Analytics Platform</h3>
+            <p class="text-gray-600 mb-4">
+              Real-time analytics dashboard processing millions of data points for business intelligence and insights.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">D3.js</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">AWS</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">Real-time Insights</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Education Platform -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-48 bg-gradient-to-r from-yellow-500 to-orange-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">EdTech Learning Platform</h3>
+            <p class="text-gray-600 mb-4">
+              Online learning management system with video streaming, interactive quizzes, and progress tracking for students.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Next.js</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Prisma</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Vercel</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">2,000+ Active Students</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Logistics Platform -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Transportation & Logistics</h3>
+            <p class="text-gray-600 mb-4">
+              Fleet management system with GPS tracking, route optimization, and delivery management for logistics companies.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Angular</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Java</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Oracle</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">40% Cost Reduction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Insurance Platform -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Insurance Management</h3>
+            <p class="text-gray-600 mb-4">
+              Comprehensive insurance platform with policy management, claims processing, and automated underwriting.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">.NET</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">SQL Server</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Azure</span>
+            </div>
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-600">Results</div>
+              <div class="font-semibold text-primary">80% Faster Claims</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Devmind Group -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border-2 border-primary" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Devmind Group</h3>
+            <p class="text-gray-600 mb-4">
+              Leading international software company with operations in UK, USA, and Zambia, delivering innovative solutions globally.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Leadership</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Innovation</span>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Global</span>
+            </div>
+            <div class="border-t pt-4">
+              <a href="https://devmindgroup.com" target="_blank" class="font-semibold text-primary hover:underline">
+                Visit Devmind Group →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white" data-aos="zoom-in">
+        <h2 class="text-4xl font-bold mb-4">Let's Build Your Success Story</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Join 600+ successful projects delivered by Devmind Group
+        </p>
+        <a href="contact.html" class="inline-block bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition transform hover:scale-105">
+          Start Your Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold gradient-text mb-4">Jack Tembo</h3>
+          <p class="text-gray-400">
+            CEO, Devmind Group<br>
+            Building digital excellence across Africa and beyond
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Services</a></li>
+            <li><a href="portfolio.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Web Development</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Mobile Apps</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Enterprise Solutions</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Consulting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>78/47 Makeni</li>
+            <li>Lusaka 10101, Zambia</li>
+            <li><a href="tel:+260772166607" class="hover:text-primary transition">+260 772 166 607</a></li>
+            <li><a href="mailto:jack@devmindgroup.com" class="hover:text-primary transition">jack@devmindgroup.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">
+            © <span id="current-year"></span> Jack Tembo. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://devmindgroup.com" target="_blank" class="text-gray-400 hover:text-primary transition">Devmind Group</a><span class="text-gray-600">|</span><a href="https://linkedin.com/in/jacktembo" target="_blank" class="text-gray-400 hover:text-primary transition">LinkedIn</a><span class="text-gray-600">|</span><a href="https://wa.me/260772166607" target="_blank" class="text-gray-400 hover:text-primary transition">WhatsApp
+              Devmind Group
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-primary to-secondary text-white p-4 rounded-full shadow-lg opacity-0 invisible hover:shadow-2xl transition transform hover:scale-110 z-40">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+</body>
+</html>

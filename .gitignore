@@ -1,0 +1,19 @@
+# Replit
+.replit
+.config/
+.cache/
+.local/
+.upm/
+replit.nix
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,950 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-widtHh, initial-scale=1.0" name="viewport">
-
-  <title>Jack Tembo | Software Engineer in Lusaka Zambia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Tembo | CEO, Devmind Group | Professional Software Development</title>
+  <meta name="description" content="Jack Tembo, CEO of Devmind Group - International software development company delivering 600+ custom solutions across UK, USA, and Zambia. Specializing in AI, Blockchain, IoT, Mobile & Enterprise Solutions.">
+  <meta name="keywords" content="Software Development, Custom Software, Mobile Apps, Enterprise Solutions, AI Development, Blockchain, IoT, Jack Tembo, Devmind Group, Zambia, UK, USA">
+  <meta name="author" content="Jack Tembo">
   <link rel="shortcut icon" type="image/svg" href="images/logo.svg" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jacktembo.com/">
+  <meta property="og:title" content="Jack Tembo | CEO, Devmind Group">
+  <meta property="og:description" content="Leading international software development company with 600+ custom solutions delivered. Specializing in AI, Blockchain, IoT & Enterprise Solutions.">
+  <meta property="og:image" content="https://jacktembo.com/assets/img/hero-img.png">
 
-  <meta content="Get yourself a responsive and blazing fast website or App
-            in less than a day. Web development for Pros starting at K5,500" name="description">
-  <meta content=" web development Jack Tembo freelance software engineer 
-    lusaka zambia. custom web solutions" name="keywords">
-  <meta property="og:title" content="Web & App Development For Pros" />
-  <meta property="og:url" content="https://www.jacktembo.com" />
-  <meta property="og:image" content="https://jacktembo.com/assets/img/hero-img.png" />
-  <meta property="og:description"
-    content="Get Yourself A Beautiful, Responsive, Smooth, And Blazing Fast App or Website For Your Business In Less Than 24 Hours." />
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-<style>
-  .the-time {
-    position: relative;
-    left: 1rem;
-  }
-
-  #header {
-    background: rgb(34, 58, 80);
-
-  }
-
-  .down-text {
-    text-align: center;
-    padding-top: 2rem;
-  }
-</style>
-
-<body>
-  <!-- Messenger Chat Plugin Code -->
-  <div id="fb-root"></div>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jacktembo.com/">
+  <meta property="twitter:title" content="Jack Tembo | CEO, Devmind Group">
+  <meta property="twitter:description" content="Leading international software development company with 600+ custom solutions delivered.">
+  <meta property="twitter:image" content="https://jacktembo.com/assets/img/hero-img.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    #scroll-to-top {
+      transition: all 0.3s ease;
+    }
+    #scroll-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+  
   <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v10.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#667eea',
+            secondary: '#764ba2',
+            dark: '#1a202c',
+          }
+        }
+      }
+    }
   </script>
-
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution="page_inbox" page_id="186725415245958">
-  </div>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="">Jack</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="v2.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="v2.html">About</a></li>
-          <li><a class="nav-link scrollto active" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="downloads/index.html
-            ">Downloads</a></li>
-          <li><a class="nav-link scrollto" href="v2.html#services-section">Services</a></li>
-          <li><a class="nav-link scrollto" href="v2.html#contact-section">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#contact">Hire Me</a></li>
-              <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Retail & E-Commerce</a></li>
-                  <li><a href="#">FinTech</a></li>
-                  <li><a href="#">Travel & Hospitality</a></li>
-                  <li><a href="#">Sports & Teams</a></li>
-                  <li><a href="#">Musicians & Bands</a></li>
-                  <li><a href="#">Events & Venues</a></li>
-                  <li><a href="#">Insurance</a></li>
-                </ul>
-              </li>
-              <li><a href="https://blog.jacktembo.com" target="_blank">Blog</a></li>
-              <li><a href="#">Sponsor</a></li>
-              <li><a href="v2.html#skills-section">Skills</a></li>
-            </ul>
-          </li>
-          <li><a class="getstarted scrollto" href="#contact">Hire Me</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold gradient-text">Jack Tembo</div>
+        
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-primary font-semibold transition">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+          <a href="services.html" class="text-gray-700 hover:text-primary transition">Services</a>
+          <a href="portfolio.html" class="text-gray-700 hover:text-primary transition">Portfolio</a>
+          <a href="testimonials.html" class="text-gray-700 hover:text-primary transition">Testimonials</a>
+          <a href="contact.html" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contact</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 text-primary font-semibold">Home</a>
+        <a href="about.html" class="block py-2 text-gray-700 hover:text-primary transition">About</a>
+        <a href="services.html" class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
+        <a href="portfolio.html" class="block py-2 text-gray-700 hover:text-primary transition">Portfolio</a>
+        <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-primary transition">Testimonials</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary transition">Contact</a>
+      </div>
     </div>
-  </header><!-- End Header -->
+  </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-          data-aos="fade-up" data-aos-delay="200">
-          <h1>Web & App Development For Pros</h1>
-          <h2>
-            Get Yourself A Beautiful, Responsive, Smooth, And Blazing Fast Website or App
-            For Your Business In Less Than A Day.
-          </h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="v2.html" class="btn-get-started scrollto">Learn More</a>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center gradient-bg pt-20">
+    <div class="container mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-white" data-aos="fade-right">
+          <div class="flex items-center gap-4 mb-6">
+            <img src="assets/img/profile.png" alt="Jack Tembo" class="w-24 h-24 rounded-full object-cover shadow-xl border-4 border-white/30">
+            <p class="text-lg opacity-90">CEO, Devmind Group</p>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Building the Future of
+            <span class="block text-yellow-300">Digital Innovation</span>
+          </h1>
+          <p class="text-xl mb-8 opacity-90 leading-relaxed">
+            Leading an international software development company with 600+ custom solutions 
+            delivered across UK, USA, and Zambia. Specializing in Web3, Blockchain, AI, and Enterprise Solutions 
+            for startups to Fortune 500 enterprises worldwide.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition transform hover:scale-105">
+              Start Your Project
+            </a>
+            <a href="portfolio.html" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+              View Portfolio
+            </a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        <div class="hidden md:block" data-aos="fade-left">
+          <img src="assets/img/hero-img.png" alt="Digital Innovation" class="w-full animate-pulse">
         </div>
       </div>
     </div>
+  </section>
 
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Me</h2>
+  <!-- Stats Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 text-center" data-aos="fade-up">
+        <div>
+          <div class="text-4xl font-bold gradient-text mb-2">600+</div>
+          <div class="text-gray-600">Custom Solutions Delivered</div>
         </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              To give you the shortest possible answer, I am a Software Engineer! Period. My main
-              goal is to help novice individuals, businesses and startups
-              increase their online presence in the digital world, make more
-              money and grow to the greatest extent possible. Whatever kind
-              of website or web application, I use my ultimate skills to
-              deliver it right to your business.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> I develop Websites with clean architecture</li>
-              <li><i class="ri-check-double-line"></i> Security is my first approach</li>
-              <li><i class="ri-check-double-line"></i> I follow Industry Standard best practices</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              The reliability and trustworthyness of a business is judged by its website. If you are
-              looking for an outstanding web developer who can deliver a fast,
-              responsive and scalable website, then I am your best friend.
-            </p>
-            <a href="v2.html#skills-section" class="btn-learn-more">Check My Skills</a>
-          </div>
+        <div>
+          <div class="text-4xl font-bold gradient-text mb-2">3</div>
+          <div class="text-gray-600">Countries (UK, USA, Zambia)</div>
         </div>
-
+        <div>
+          <div class="text-4xl font-bold gradient-text mb-2">Global</div>
+          <div class="text-gray-600">Clients Worldwide</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold gradient-text mb-2">5★</div>
+          <div class="text-gray-600">Client Satisfaction</div>
+        </div>
       </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Why choose <strong>Jack Tembo </strong>for your next project?</h3>
-              <p>
-                Many web developers out there just know how to create websites,
-                but they really do not put into consideration business needs. But guess
-                what? Jack Tembo is different. Jack has been in the web Industry
-                for some time, and can deliver applications quickly due to the fact
-                that he understands business workflows.
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>
-                    Reliable <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Reliable web developer who can deliver software in no time.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>
-                    World Class <i class="bx bx-chevron-down icon-show"></i><i
-                      class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      World class understanding of web technologies.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> A
-                    Perfectionist With
-                    Deadlines <i class="bx bx-chevron-down icon-show"></i><i
-                      class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Jack uses the right tools for the job.
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-            style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
+    </div>
+  </section>
+  
+  <!-- Technology Stack Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4">
+          Our <span class="gradient-text">Technology Stack</span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Leveraging cutting-edge technologies to build exceptional solutions
+        </p>
       </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>You need a developer with the right skills for your project</h3>
-            <p class="fst-italic">
-              Hiring a programmer like Jack Tembo guarantees your project
-              to be inpactful and world class.
-            </p>
-
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">Backend <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Frontend <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">DevOps and Deployment <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Security <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">Search Engine Optimization <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
+      
+      <div class="grid md:grid-cols-4 lg:grid-cols-8 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up">
+          <div class="text-3xl mb-2">⚛️</div>
+          <p class="font-semibold">React</p>
         </div>
-
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="50">
+          <div class="text-3xl mb-2">📱</div>
+          <p class="font-semibold">React Native</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-3xl mb-2">🟢</div>
+          <p class="font-semibold">Node.js</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="150">
+          <div class="text-3xl mb-2">🐍</div>
+          <p class="font-semibold">Python</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-3xl mb-2">🎯</div>
+          <p class="font-semibold">Flutter</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="250">
+          <div class="text-3xl mb-2">☁️</div>
+          <p class="font-semibold">AWS/Azure</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-3xl mb-2">⛓️</div>
+          <p class="font-semibold">Blockchain</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="350">
+          <div class="text-3xl mb-2">🔐</div>
+          <p class="font-semibold">Web3</p>
+        </div>
       </div>
-    </section><!-- End Skills Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="text-center" data-aos="fade-up">
+        <p class="text-gray-600 text-lg">
+          Plus: Solidity, Ethereum, Polygon, Angular, Vue.js, Django, Flask, PostgreSQL, MongoDB, Docker, Kubernetes, AI/ML & More
+        </p>
+      </div>
+    </div>
+  </section>
 
-        <div class="section-title">
-          <h2>Programming Lessons</h2>
-          <p>Do you want to learn how to develop websites and applications?
-            Jack offers coding lessons to individuals who are willing to explore
-            the world of technology. If you are an absolute beginner, don't worry.
-            I will hold your hands throughout the entire program. You are not too old
-            or too young. Programming is super exciting to learn.
+  <!-- Company Values Section -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4 text-white">
+          Why Choose Devmind Group
+        </h2>
+        <p class="text-xl text-white/90 max-w-2xl mx-auto">
+          International software development company serving clients across the globe
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-white text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-5xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Custom</h3>
+          <p class="text-white/90">
+            Designing solutions that perfectly align with your vision and needs. Leveraging the latest technologies to bring your ideas to life.
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Python Programming Lessons</a></h4>
-              <p>Learn the Python programming language with Jack. Master the most
-                misunderstood programming language in the world. Python is the
-                most porpular and widely used programming language in the world
-                right now. Big companies and professsionals use it to do cool things
-                like Automation, they use it in Artificial Intelligence and well as
-                building applications and websites like Instagram and Dropbox.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Web Development Lessons</a></h4>
-              <p>Learn how to develop websites using latest technologies.
-                As you would arguably agree with me, the world has now gone digital.
-                having the web development skills will benefit you in various ways.
-                In this program, I will teach you all the web development fundamentals
-                as well as how to think like a programmer. By the end of the program,
-                you will have solid understanding of web design and development. You will
-                also be able to create amazing webistes like this very website. In other words,
-                you will be able to troubleshoot issues like a Pro.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Kotlin Programming Lessons</a></h4>
-              <p>Learn the Kotlin programming language. The official language for
-                developing android applications. If you want to become a mobile application
-                developer, Kotlin is the right choice. Learn the programming language that powers
-                the top 60% of the android apps on Google Play Store. Master app development
-                and create amazing android apps for your business.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-            data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Linux & Penetration Testing Lessons</a></h4>
-              <p>Learn The art of Ethical Hacking. Speed up your understanding of
-                web vulnerabilities so that you can protect yourself for any potential
-                online attack. Get an indepth understanding of the Linux operating system:
-                Learn the Linux command line; the most scary part of linux for new users.
-                In this program, you will also learn how to configure, maintain and Deploy
-                applications in the Linux Server like a Pro.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <article>
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-start">
-              <h3>Take your business to the digital world with my web design
-                solutions.</h3>
-              <p>
-                Run your business like a Pro. Facilitate your customers' communications
-                with what the digital world has to offer. Reach up to 100,000 people
-                daily using your website. Let your website do business for you. A good
-                web design will describe who you are and what you do. This is what Jack
-                is here for. Jack develops your website, you run your business
-                smoothly.
-              </p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="v2.html#services-section">Learn More</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section><!-- End Cta Section -->
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Check out a few of my web development prices below.
-            Get to see which one best suits your needs. Get yourself a website
-            at an affordable price and see your site rank on Google search results.
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-white text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-5xl mb-4">💎</div>
+          <h3 class="text-xl font-bold mb-3">Dedicated</h3>
+          <p class="text-white/90">
+            Experience the power of a dedicated development team. Our experts dive deep into every aspect of your project.
           </p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Silver Standard Static Website</h3>
-              <h4><sup>K</sup>5,500<span>Ideal For Business Advertizement</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 1 Day</li>
-                <li><i class="bx bx-check"></i> 1-5 Pages</li>
-                <li><i class="bx bx-check"></i> Premium .com, .org or .net Domain Name</li>
-                <li><i class="bx bx-check"></i> Powerful Design</li>
-                <li><i class="bx bx-check"></i> 3 professional email addresses from your domain name</li>
-              </ul>
-              <a href="#" class="buy-btn">See All Features</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Gold Standard Static Website</h3>
-              <h4><sup>K</sup>6,900<span>Ideal For Businesses With Various Services</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 2 Days</li>
-                <li><i class="bx bx-check"></i> Custom Design</li>
-                <li><i class="bx bx-check"></i> Collect Customer Information</li>
-                <li><i class="bx bx-check"></i> Contact Form</li>
-                <li><i class="bx bx-check"></i> up to 15 Pages</li>
-                <li><i class="bx bx-check"></i> Up to 5 professional email addresses</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Gold Standard Dynamic Website</h3>
-              <h4><sup>K</sup>8,950<span>For Growing & Medium-Sized Businesses </span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 3 Days</li>
-                <li><i class="bx bx-check"></i> All Gold Standard static site Features</li>
-                <li><i class="bx bx-check"></i> Up to 50 professional email addresses</li>
-                <li><i class="bx bx-check"></i> Custom Design</li>
-                <li><i class="bx bx-check"></i> Questionaires</li>
-                <li><i class="bx bx-check"></i> Newsletter Subscriptions</li>
-                <li><i class="bx bx-check"></i> Admin Panel</li>
-                <li><i class="bx bx-check"></i> Up To 3 Admin Accounts</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Platinum Standard Dynamic Website</h3>
-              <h4><sup>K</sup>12,400<span>For Medium To Large Businesses</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 5 Days</li>
-                <li><i class="bx bx-check"></i> All Gold Standard Dynamic Website Features</li>
-                <li><i class="bx bx-check"></i> up to 50 professional email addresses from your domain name</li>
-                <li><i class="bx bx-check"></i> Up To 10 Admin Accounts</li>
-                <li><i class="bx bx-check"></i> Custom API Programming</li>
-              </ul>
-              <a href="#" class="buy-btn">See All Features</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Diamond Standard Enterprise Website</h3>
-              <h4><sup>K</sup>15,000<span>For Large Enterprise Businesses</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 7 Days</li>
-                <li><i class="bx bx-check"></i> All Platinum Standard Dynamic Website Feautes</li>
-                <li><i class="bx bx-check"></i> Unlimited Admin Accounts</li>
-                <li><i class="bx bx-check"></i> Unlimited Email Hosting</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Standard E-Commerce Website</h3>
-              <h4><sup>K</sup>22,500<span>For Product Supliers and Sellers </span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 14 Days</li>
-                <li><i class="bx bx-check"></i> Product Catalogue</li>
-                <li><i class="bx bx-check"></i> Unlimited Product Listings</li>
-                <li><i class="bx bx-check"></i> Visa/Mastercad Payment Gateway</li>
-                <li><i class="bx bx-check"></i> Up To 25 Admin/Staff Accounts</li>
-                <li><i class="bx bx-check"></i> order Tracking Integration</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>School Learning Management System</h3>
-              <h4><sup>K</sup>26,000<span>For Schools, Colleges & Uiversities</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 19 Days</li>
-                <li><i class="bx bx-check"></i> Online Assignments, Quiz & Test</li>
-                <li><i class="bx bx-check"></i> Student & lecturer Chat</li>
-                <li><i class="bx bx-check"></i> Test & Exam Scheduling</li>
-                <li><i class="bx bx-check"></i> Online results & Grading</li>
-                <li><i class="bx bx-check"></i> Custom API Programming</li>
-              </ul>
-              <a href="#" class="buy-btn">See All Features</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Students Information System</h3>
-              <h4><sup>K</sup>26,000<span>For Schools, Colleges & Universities</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 14 Days</li>
-                <li><i class="bx bx-check"></i> Student Records & Management</li>
-                <li><i class="bx bx-check"></i> Student Results Access & Report</li>
-                <li><i class="bx bx-check"></i> Student Payment Status</li>
-                <li><i class="bx bx-check"></i> Student Course Management</li>
-                <li><i class="bx bx-check"></i> Student Finance Management</li>
-                <li><i class="bx bx-check"></i> Unlimited Students</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>School Online Application System</h3>
-              <h4><sup>K</sup>26,000<span>For Schools, Colleges & Universities </span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 14 Days</li>
-                <li><i class="bx bx-check"></i> Online Application Portal</li>
-                <li><i class="bx bx-check"></i> Online Student Payments</li>
-                <li><i class="bx bx-check"></i> Track Application Status</li>
-                <li><i class="bx bx-check"></i> Up To 25 Admin/Staff Accounts</li>
-                <li><i class="bx bx-check"></i> Unlimited Applications</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Advanced E-Commerce Website</h3>
-              <h4><sup>K</sup>37,999<span>For Growing Retailers & Wholesalers</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 21 Day</li>
-                <li><i class="bx bx-check"></i> All Advanced E-Commerce Webiste Features</li>
-                <li><i class="bx bx-check"></i> Custom Intelligent Product Recommendation</li>
-                <li><i class="bx bx-check"></i> Local Payment Methods Gateway</li>
-                <li><i class="bx bx-check"></i> Unlimited Email Hosting</li>
-                <li><i class="bx bx-check"></i> Up To 50 Admin/Staff Accounts</li>
-              </ul>
-              <a href="#" class="buy-btn">See All Features</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Advanced Organization Website</h3>
-              <h4><sup>K</sup>39,800<span>For Non Governmental Organizations</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 28 Days</li>
-                <li><i class="bx bx-check"></i> Custom Organization Workflows</li>
-                <li><i class="bx bx-check"></i> Unlimited Admin/Staff Accounts</li>
-                <li><i class="bx bx-check"></i> Unlimited Email Hosting</li>
-                <li><i class="bx bx-check"></i> Custom API Integration</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>World Class Web Application</h3>
-              <h4><sup>K</sup>65,000<span>For Big Companies</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 6 Weeks</li>
-                <li><i class="bx bx-check"></i> All Advanced Organisation Website Features</li>
-                <li><i class="bx bx-check"></i> Custom Web Application architecture</li>
-                <li><i class="bx bx-check"></i> Unlimited Company Workflows</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Premium World Class Web Application</h3>
-              <h4><sup>K</sup>115,000<span>For Big Companies & Organizations</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 2 Months</li>
-                <li><i class="bx bx-check"></i> All World Class Website Feautures</li>
-                <li><i class="bx bx-check"></i> Multilingual Web Application</li>
-                <li><i class="bx bx-check"></i> A.I Assisted Website</li>
-                <li><i class="bx bx-check"></i> Custom Algorithms Design</li>
-              </ul>
-              <a href="#" class="buy-btn">See All Features</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Gold Standard World Class Web Application</h3>
-              <h4><sup>K</sup>577,000<span>For Agencies</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready In 3 Months</li>
-                <li><i class="bx bx-check"></i> All Premium World Class Web Application Features</li>
-                <li><i class="bx bx-check"></i> Machine Learning & A.I Assisted Web Application</li>
-                <li><i class="bx bx-check"></i> Unlimited Data Backups</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Fortune 500 Standard Web Application</h3>
-              <h4><sup>K</sup>999,000<span>For Companies With World Class Businesses </span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Ready in 6 Months</li>
-                <li><i class="bx bx-check"></i> All Gold Standard World Class Web Application Features</li>
-                <li><i class="bx bx-check"></i> Daily Data Backups</li>
-                <li><i class="bx bx-check"></i> Internal Business Applications Integration</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      </div>
-      <h3 class="down-text">For custom web solutions, kindly send me an email with details.</h3>
-    </section><!-- End Pricing Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>In case you have questions, please consider checking the Frequently
-            asked questions. If your question is not listed, feel free to hit my
-            inbox or fill in the contact form on below this page.
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-white text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-5xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Adaptable</h3>
+          <p class="text-white/90">
+            Choose an engagement model that fits your business. Our flexible approach ensures alignment with your goals.
           </p>
         </div>
 
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                data-bs-target="#faq-list-1">Does jack Tembo offer discounts? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Yes. upon request via negotiation, Jack will give you a dicount depending
-                  on the service you are requesting.
-                </p>
-              </div>
-            </li>
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-white text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-5xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold mb-3">Agile</h3>
+          <p class="text-white/90">
+            Receive high-quality, user-centered solutions on time. We ensure your project meets expectations and drives satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
-                class="collapsed">What type of website does Jack develop <i class="bx bx-chevron-down icon-show"></i><i
-                  class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Jack is a full stack developer. He can make any kind of
-                  website. You are only limited to your imagination.
-                </p>
-              </div>
-            </li>
+  <!-- Industries Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4">
+          Industries We <span class="gradient-text">Serve</span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Delivering innovative solutions across multiple sectors
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up">
+          <div class="text-4xl mb-3">💰</div>
+          <h3 class="font-bold mb-2">Fintech</h3>
+          <p class="text-sm text-gray-600">Financial software solutions</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl mb-3">🏥</div>
+          <h3 class="font-bold mb-2">Healthcare</h3>
+          <p class="text-sm text-gray-600">Medical & wellness platforms</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl mb-3">🚚</div>
+          <h3 class="font-bold mb-2">Logistics</h3>
+          <p class="text-sm text-gray-600">Transportation & supply chain</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl mb-3">📚</div>
+          <h3 class="font-bold mb-2">EdTech</h3>
+          <p class="text-sm text-gray-600">Education platforms</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up">
+          <div class="text-4xl mb-3">🏗️</div>
+          <h3 class="font-bold mb-2">Construction</h3>
+          <p class="text-sm text-gray-600">Project management tools</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl mb-3">✈️</div>
+          <h3 class="font-bold mb-2">Travel</h3>
+          <p class="text-sm text-gray-600">Hospitality solutions</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl mb-3">🚗</div>
+          <h3 class="font-bold mb-2">Automotive</h3>
+          <p class="text-sm text-gray-600">Fleet & vehicle systems</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md card-hover text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl mb-3">🛡️</div>
+          <h3 class="font-bold mb-2">Insurance</h3>
+          <p class="text-sm text-gray-600">Policy & claims management</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="services.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition transform hover:scale-105">
+          Explore Our Services
+        </a>
+      </div>
+    </div>
+  </section>
 
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                class="collapsed">How do I pay for the services? <i class="bx bx-chevron-down icon-show"></i><i
-                  class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  I accept most payment methods. Starting from hand in hand
-                  payment, bank transfer, credit card payment and so on.
-                </p>
-              </div>
-            </li>
+  <!-- CTA Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white" data-aos="zoom-in">
+        <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Let's discuss your project and build something amazing together
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition transform hover:scale-105">
+            Get Started Today
+          </a>
+          <a href="about.html" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold gradient-text mb-4">Jack Tembo</h3>
+          <p class="text-gray-400">
+            CEO, Devmind Group<br>
+            Building digital excellence across Africa and beyond
+          </p>
+          <div class="mt-4">
+            <p class="text-sm text-gray-500">🏆 600+ Solutions Delivered</p>
+            <p class="text-sm text-gray-500">🌍 UK | USA | Zambia</p>
+            <p class="text-sm text-gray-500">⭐ 5-Star Rated</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Services</a></li>
+            <li><a href="portfolio.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
           </ul>
         </div>
 
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Get In Touch</h2>
-          <p>Maybe you have a cool idea and you need a website?
-            just talk to me. I am available for freelancing.
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Web Development</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Mobile Apps</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Enterprise Solutions</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Consulting</a></li>
+          </ul>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>
-                  <address>
-                    8th Floor, Lotti House - Office 813
-                    <br> Cairo Road - Lusaka 10101 Zambia.
-                  </address>
-                </p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:jack@jacktembo.com">jack@jacktembo.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel://+260971977252">+260-971977252</a></p>
-              </div>
-              Having a proper web application has never been easy. This
-              is where Jack Tembo comes to the rescule. Grow your business
-              with Jack. I deliver beautiful, responsive and blazingly fast
-              websites that look great on any kind of device. Just this very
-              website is an example of how I develop the look and feel of
-              websites with smooth and beautiful animations for different devices.
-              try this website on different devices and see for yourself how it
-              respond to screen sizes. But this is just a component of my skill.
-              my strength is in implementing business logics; developing
-              intelligent websites that make decisions based on what a user does
-              with it.
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formspree.io/f/xrgjbegz" method="post" class="contact-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>78/47 Makeni</li>
+            <li>Lusaka 10101, Zambia</li>
+            <li><a href="tel:+260772166607" class="hover:text-primary transition">+260 772 166 607</a></li>
+            <li><a href="mailto:jack@devmindgroup.com" class="hover:text-primary transition">jack@devmindgroup.com</a></li>
+          </ul>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter" id="newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Jack Tembo's Newsletter</h4>
-            <p>See what Jack Tembo is always up to. Just enter your email below,
-              and everrything is done.
-            </p>
-            <form action="https://formspree.io/f/xrgjbegz" method="post">
-              <input type="email" name="email" placeholder="your email" required><input type="submit" value="Subscribe">
-            </form>
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">
+            © <span id="current-year"></span> Jack Tembo. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://devmindgroup.com" target="_blank" class="text-gray-400 hover:text-primary transition">
+              Devmind Group
+            </a>
+            <span class="text-gray-600">|</span>
+            <a href="https://linkedin.com/in/jacktembo" target="_blank" class="text-gray-400 hover:text-primary transition">
+              LinkedIn
+            </a>
+            <span class="text-gray-600">|</span>
+            <a href="https://wa.me/260772166607" target="_blank" class="text-gray-400 hover:text-primary transition">
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-primary to-secondary text-white p-4 rounded-full shadow-lg opacity-0 invisible hover:shadow-2xl transition transform hover:scale-110 z-40">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Jack Tembo</h3>
-            <p>
-              <address>
-                8th Floor, Lotti House - Office 813 <br>
-                Cairo Road, Lusaka 10101<br>
-                Zambia <br><br>
-                <strong>Phone:</strong><a href="tel://+260971977252">+260-971977252</a><br>
-                <strong>Email:</strong> <a href="mailto:jack@jacktembo.com">jack@jacktembo.com</a><br>
-              </address></p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html">Global</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-section">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://blog.jacktembo.com">Blog</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Hire Me</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>My Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-sectiom">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-section">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-section">Product Strategy</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-section">Programming Lessons</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="v2.html#services-section">Data Recovery</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Connect With Me on Social Media</h4>
-            <p>I am social. Feel free to connect with me on any of the listed social media
-              platforms below.
-            </p>
-            <div class="social-links mt-3">
-              <a href="http://twitter.jacktembo.com" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://facebook.com/originaljacktembo" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://instagram.com/originaljacktembo" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://linkedin.com/in/jacktembo" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        Copyright &copy; <span class="year"></span> | <strong><span>Jack Tembo&REG;</span></strong>. All Rights Reserved
-        |
-      </div>
-      <div class="the-time">
-
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-
-  <!-- utitily scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
   <script>
-    let currentYear = new Date().getFullYear()
-    let yearElement = document.querySelector("span.year")
-    yearElement.textContent = currentYear
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
 
-    function timeCounter() {
-      let currentTime = new Date()
-      let hour = currentTime.getHours()
-      let minute = currentTime.getMinutes()
-      let second = currentTime.getSeconds()
-      let fullTime = `The time is ${hour}:${minute}:${second}`
-      let timeElement = document.querySelector(".the-time")
-      timeElement.textContent = fullTime
-    }
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
 
-    timeCounter()
-    setInterval(timeCounter, 1000)
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   </script>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

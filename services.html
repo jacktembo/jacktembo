@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Jack Tembo - Devmind Group | Blockchain, Web3, AI & Enterprise Solutions</title>
+  <meta name="description" content="Comprehensive software development services by Devmind Group: Blockchain & Web3, Custom Web Development, Mobile Apps, Enterprise Solutions, E-Commerce, Security & Consulting. 600+ solutions delivered.">
+  <meta name="keywords" content="Software Development Services, Web Development, Mobile Apps, Blockchain Development, Web3, Smart Contracts, Enterprise Solutions, E-Commerce, Devmind Group, Zambia">
+  <meta name="author" content="Jack Tembo">
+  <link rel="shortcut icon" type="image/svg" href="images/logo.svg" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jacktembo.com/services.html">
+  <meta property="og:title" content="Services | Devmind Group - Blockchain, Web3 & Enterprise Solutions">
+  <meta property="og:description" content="Comprehensive software development services: Blockchain & Web3, Custom Web Development, Mobile Apps, Enterprise Solutions. 600+ solutions delivered.">
+  <meta property="og:image" content="https://jacktembo.com/assets/img/hero-img.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jacktembo.com/services.html">
+  <meta property="twitter:title" content="Services | Devmind Group - Blockchain, Web3 & Enterprise Solutions">
+  <meta property="twitter:description" content="Comprehensive software development services including Blockchain & Web3. 600+ solutions delivered.">
+  <meta property="twitter:image" content="https://jacktembo.com/assets/img/hero-img.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+  </style>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#667eea',
+            secondary: '#764ba2',
+            dark: '#1a202c',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold gradient-text">Jack Tembo</div>
+        
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+          <a href="services.html" class="text-primary font-semibold transition">Services</a>
+          <a href="portfolio.html" class="text-gray-700 hover:text-primary transition">Portfolio</a>
+          <a href="testimonials.html" class="text-gray-700 hover:text-primary transition">Testimonials</a>
+          <a href="contact.html" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contact</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
+        <a href="about.html" class="block py-2 text-gray-700 hover:text-primary transition">About</a>
+        <a href="services.html" class="block py-2 text-primary font-semibold">Services</a>
+        <a href="portfolio.html" class="block py-2 text-gray-700 hover:text-primary transition">Portfolio</a>
+        <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-primary transition">Testimonials</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-20 gradient-bg">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold text-white mb-4" data-aos="fade-up">Our Services</h1>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Comprehensive software solutions tailored to your business needs
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service 0: Blockchain & Web3 Development -->
+        <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl shadow-lg card-hover text-white" data-aos="fade-up" data-aos-delay="50">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Blockchain & Web3 Development</h3>
+          <p class="mb-6 text-white/90">
+            Build secure, decentralized applications with smart contracts on multiple blockchain networks. 
+            DeFi platforms, NFT marketplaces, and token systems.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Smart Contracts (Solidity)
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Multi-Chain Support
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              DeFi & NFT Platforms
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service 1 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Custom Web Development</h3>
+          <p class="text-gray-600 mb-6">
+            Build fast, responsive, and scalable web applications using modern frameworks. 
+            From landing pages to complex enterprise systems.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              React & Vue.js Applications
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Django & Node.js Backend
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              RESTful APIs & Databases
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Mobile App Development</h3>
+          <p class="text-gray-600 mb-6">
+            Native and cross-platform mobile applications that deliver exceptional user experiences 
+            on iOS and Android.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              React Native & Flutter
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Progressive Web Apps
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              App Store Deployment
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Enterprise Solutions</h3>
+          <p class="text-gray-600 mb-6">
+            Robust enterprise systems that streamline operations, improve efficiency, 
+            and drive business growth.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Custom CRM & ERP Systems
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Business Process Automation
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Cloud Infrastructure
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">E-Commerce Solutions</h3>
+          <p class="text-gray-600 mb-6">
+            Complete e-commerce platforms with payment integration, inventory management, 
+            and analytics to boost your online sales.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Custom Shopping Platforms
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Payment Gateway Integration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Inventory & Order Management
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 5: SMS Gateway & Communications -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">SMS Gateway & Communications</h3>
+          <p class="text-gray-600 mb-6">
+            Reliable SMS messaging platform for Zambian mobile networks with REST API integration. 
+            Perfect for OTP, notifications, and marketing campaigns.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Bulk & Single SMS Sending
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Custom Sender IDs
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Multi-Network Support (Airtel, MTN, Zamtel)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 6: Payment Gateway Solutions -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Payment Gateway Solutions</h3>
+          <p class="text-gray-600 mb-6">
+            Comprehensive payment processing platform enabling merchants to accept card payments 
+            and mobile money worldwide with fraud detection and real-time processing.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Card & Mobile Money Payments
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Multi-Currency Support
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Fraud Detection & Security
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Security & Compliance</h3>
+          <p class="text-gray-600 mb-6">
+            Implement robust security measures and ensure your applications meet 
+            industry standards and compliance requirements.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Security Audits
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Penetration Testing
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              GDPR Compliance
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Consulting & Training</h3>
+          <p class="text-gray-600 mb-6">
+            Strategic technology consulting and comprehensive training programs to empower 
+            your team with the latest skills.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Technology Strategy
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Programming Lessons
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Team Development
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white" data-aos="zoom-in">
+        <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Let's discuss your project requirements and create a custom solution for you
+        </p>
+        <a href="contact.html" class="inline-block bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition transform hover:scale-105">
+          Contact Us Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold gradient-text mb-4">Jack Tembo</h3>
+          <p class="text-gray-400">
+            CEO, Devmind Group<br>
+            Building digital excellence across Africa and beyond
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Services</a></li>
+            <li><a href="portfolio.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Web Development</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Mobile Apps</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Enterprise Solutions</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary transition">Consulting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>78/47 Makeni</li>
+            <li>Lusaka 10101, Zambia</li>
+            <li><a href="tel:+260772166607" class="hover:text-primary transition">+260 772 166 607</a></li>
+            <li><a href="mailto:jack@devmindgroup.com" class="hover:text-primary transition">jack@devmindgroup.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">
+            © <span id="current-year"></span> Jack Tembo. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://devmindgroup.com" target="_blank" class="text-gray-400 hover:text-primary transition">Devmind Group</a><span class="text-gray-600">|</span><a href="https://linkedin.com/in/jacktembo" target="_blank" class="text-gray-400 hover:text-primary transition">LinkedIn</a><span class="text-gray-600">|</span><a href="https://wa.me/260772166607" target="_blank" class="text-gray-400 hover:text-primary transition">WhatsApp
+              Devmind Group
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-primary to-secondary text-white p-4 rounded-full shadow-lg opacity-0 invisible hover:shadow-2xl transition transform hover:scale-110 z-40">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+</body>
+</html>
